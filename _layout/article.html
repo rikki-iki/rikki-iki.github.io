@@ -29,20 +29,25 @@
     
   <main role="main" class="wrapper">
     
-    <article role="article">
+    <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
     
       <header>
       
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.excerpt }}</p>
+        <h1 itemprop="name">{{ page.title }}</h1>
+        <p itemprop="description">{{ page.excerpt }}</p>
       
       </header>
       
-      {{ page.content }}
+      <div itemprop="articleBody">
+      
+        {{ page.content }}
+      
+      </div>
       
       <footer>
       
-        <p>Posted: <time datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time></p>
+        <p>Posted: <time datetime="{{ page.date }}" itemprop="datePublished">
+          {{ page.date | date_to_long_string }}</time></p>
         <p itemprop="author" itemscope itemtype="http://schema.org/Person">
           Author: <i itemprop="name"><a href="http://twitter.com/rikki_iki" itemprop="url" rel="me">Rikki Bochow</a></i></p>
         
