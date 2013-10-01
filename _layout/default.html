@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
 
+  <!-- meta -->
   <meta charset="UTF-8">
+  {% include mobile_meta.html %}
+  
+  <!-- dns prefetch for faster loading of external resources -->
+  {% include dns_prefetch.html %}
+  
   <title>{{ page.title }} &#8212; ikalator.com</title>
+  <meta name="author" content="Rikki Bochow">
+  <meta name="description" content="{{ page.excerpt }}">
+  
+  <!-- stylesheet: coming soon! -->
+  
+  <!-- javascript -->
+  {% include javascript.html %}
     
-</head>
-<body id="ikalator">
+</head><body id="ikalator">
   
   <header>
     
@@ -28,7 +40,7 @@
   
   <footer>
     
-    <p>Design and content &#169; <a href="http://twitter.com/rikki_iki" rel="me">Rikki Bochow</a>. All Rights Reserved.</p>
+    {% include footer.html %}
     
   </footer>
 

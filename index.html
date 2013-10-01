@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
 
+  <!-- meta -->
   <meta charset="UTF-8">
+  {% include mobile_meta.html %}
+  
+  <!-- dns prefetch for faster loading of external resources -->
+  {% include dns_prefetch.html %}
+  
   <title>ikalator.com</title>
+  <meta name="author" content="Rikki Bochow">
+  <meta name="description" content="Learnings about Front-end and Drupal development">
+  
+  <!-- stylesheet: coming soon! -->
+  
+  <!-- javascript -->
+  {% include javascript.html %}
     
 </head>
 <body id="ikalator">
@@ -49,7 +62,7 @@
   
   <footer>
     
-    <p>Design and content &#169; <a href="http://twitter.com/rikki_iki" rel="me">Rikki Bochow</a>. All Rights Reserved.</p>
+    {% include footer.html %}
     
   </footer>
 
