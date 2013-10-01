@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>{{ page.title }} &#8212; ikalator.com</title>
+    
+</head>
+<body id="ikalator">
+  
+  <header>
+    
+    <a href="/index.html" rel="home">Rikki Bochow</a>
+    
+  </header>
+    
+  <main class="wrapper">
+    
+    <article>
+    
+      <header>
+      
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.excerpt }}</p>
+      
+      </header>
+      
+      {{ page.content }}
+      
+      <footer>
+      
+        <p>Posted: <time datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time></p>
+        <p>Author: <a href="http://twitter.com/rikki_iki" rel="me">Rikki Bochow</a></p>
+        
+      </footer>
+
+    </article>
+  
+  </main>
+  
+  <footer>
+    
+    <p>Design and content &#169; <a href="http://twitter.com/rikki_iki" rel="me">Rikki Bochow</a>. All Rights Reserved.</p>
+    
+  </footer>
+
+</body>
+</html>
