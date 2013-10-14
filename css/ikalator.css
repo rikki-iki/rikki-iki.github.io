@@ -11,7 +11,7 @@ pre {
   margin-bottom: 1em;
 }
 html{
-  font: 1em/1.2 "adelle","Georgia",serif;
+  font: 1em/1.625em "adelle","Georgia",serif;
   overflow-y:scroll;
   min-height:100%;
   color: hsl(0,0%,13%);
@@ -179,30 +179,44 @@ h4,.h4,h5,.h5,h6,.h6 {
   font-weight:normal;
 }
 h1,.h1{
-  font-size: 42px;
+  font-size: 2.625em; /* 42px */
+  line-height: 1em;
+  margin-bottom: 26px;
 }
 h2,.h2{
-  font-size: 32px;
+  font-size: 2em;     /* 32px */
+  line-height: 1em;
+  margin-bottom: 26px;
 }
 h3,.h3{
-  font-size: 28px;
+  font-size: 1.625em; /* 26px */
+  line-height: 1em;
+  margin-bottom: 26px;
 }
 h4,.h4{
-  font-size: 22px;
+  font-size: 1.25em;  /* 20px */
+  line-height: 1em;
+  margin-bottom: 26px;
 }
 h5,.h5{
-  font-size: 18px;
+  font-size: 1.125em; /* 18px */
+  line-height: 1em;
+  margin-bottom: 26px;
 }
 h6,.h6{
-  font-size: 16px;
+  font-size: 1em;     /* 16px */
+  line-height: 1em;
+  margin-bottom: 26px;
 }
 h1 small,
 h2 small {
   font-weight: normal;
   color: hsl(0,0%,47%);
 }
-p {
-  line-height: 1.8;
+
+p,
+article > footer {
+  margin-bottom: 26px;
 }
 /*------------------------------------*\
     links
@@ -245,11 +259,16 @@ a:link{
 /*------------------------------------*\
     lists
 \*------------------------------------*/
+ul, 
+ol {
+  margin-bottom: 26px;
+  padding-left: 26px;
+}
 /**
  * Remove vertical spacing from nested lists.
  */
 li{
-  line-height:1.8;
+  line-height:26px;
   > ul,
   > ol{
     margin-bottom:0;
@@ -328,6 +347,22 @@ figure figcaption {
   .p {
     position: static;
   }
+}
+/*------------------------------------*\
+    layout
+\*------------------------------------*/
+html {
+  border-left: 1em solid hsl(162,100%,20%);
+  padding: 2em 2em 2em 1em;
+}
+body {
+  margin: 0 auto;
+  max-width: 685px;
+}
+footer {
+  color: hsl(0,0%,47%);
+  font-size: 0.8125em; /* 13px */
+  line-height: 1.625em;
 }
 /*------------------------------------*\
    print
