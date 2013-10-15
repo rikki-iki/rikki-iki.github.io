@@ -40,22 +40,18 @@
     <section itemscope itemtype="http://schema.org/Blog" class="articles">
     
       <h1 itemprop="name">Articles</h1>
+      
+      {% for post in site.posts %}
 
       <article role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <h1 itemprop="name" class="h2"><a href="article.html" itemprop="url">Article title</a></h1>
-        <p itemprop="description">Article excerpt</p>
-        <footer><time datetime="2013-00-00" itemprop="datePublished">00/00/2013</time></footer>
+        <h1 itemprop="name" class="h2"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
+        <p itemprop="description">{{ post.excerpt }}</p>
+        <footer><time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time></footer>
 
       </article>
       
-      <article role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-
-        <h1 itemprop="name" class="h2"><a href="article.html" itemprop="url">Article title</a></h1>
-        <p itemprop="description">Article excerpt</p>
-        <footer><time datetime="2013-00-00" itemprop="datePublished">00/00/2013</time></footer>
-
-      </article>
+      {% endfor %}
     
     </section>
   
