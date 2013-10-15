@@ -16,7 +16,7 @@ html{
   min-height:100%;
   color: hsl(0,0%,13%);
   -webkit-overflow-scrolling: touch;
-	-webkit-tap-highlight-color: hsl(162,100%,20%);
+	-webkit-tap-highlight-color: hsl(351,80%,38%);
 }
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -85,11 +85,11 @@ sup{
  * Set the colour for highlighted text
  */
 ::selection {
-  background-color: hsl(162,100%,20%);
+  background-color: hsl(351,80%,38%);
   color: hsl(0,0%,100%);
 }
 ::moz-selection {
-  background-color: hsl(162,100%,20%);
+  background-color: hsl(351,80%,38%);
   color: hsl(0,0%,100%);
 }
 
@@ -162,7 +162,7 @@ pre {
 code,
 samp,
 kbd {
-  color: hsl(162,100%,20%);
+  color: hsl(351,80%,38%);
 }
 
 /*------------------------------------*\
@@ -226,8 +226,8 @@ article > footer {
  * styling only to anchors which have `href` attributes.
  */
 a:link{
-  color: hsl(162,100%,20%);
-  border-bottom: 1px dotted hsl(162,100%,20%);
+  color: hsl(351,80%,38%);
+  border-bottom: 1px dotted hsl(351,80%,38%);
   
   -webkit-transition:color .2s linear, background .2s linear;
 	-moz-transition:color .2s linear, background .2s linear;
@@ -254,6 +254,7 @@ a:link{
     * Make the visited state nicer
     */
   a:visited {
+    color: hsl(351,80%,38%);
   }
   
 /*------------------------------------*\
@@ -352,7 +353,7 @@ figure figcaption {
     layout
 \*------------------------------------*/
 html {
-  border-left: 1em solid hsl(162,100%,20%);
+  border-left: 1em solid hsl(351,80%,49%);
   padding: 2em 2em 2em 1em;
 }
 body {
