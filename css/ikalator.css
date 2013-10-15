@@ -1,3 +1,12 @@
+/*
+ * Colours
+ * Contasts calculated with: http://leaverou.github.io/contrast-ratio
+ * to ensure accessibility is good.
+ *
+ * bright red: hsl(351,80%,49%) - contrast 4.8 (AA);
+ * dark red: hsl(351,80%,38%) - contrast 7.1 (AAA);
+*/
+
 /**
  * Base elements
  */
