@@ -181,6 +181,9 @@ kbd {
  * When we define a heading we also define a corresponding class to go with it.
  * This allows us to apply, say, `class=h3` to a `h3`; a double-stranded
  * heading hierarchy.
+ *
+ * Ratio calculated with: http://www.pearsonified.com/typography/
+ * For optimal legibility.
  */
 h1,.h1,h2,.h2,h3,.h3,
 h4,.h4,h5,.h5,h6,.h6 {
