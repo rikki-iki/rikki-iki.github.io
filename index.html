@@ -27,7 +27,8 @@
   
   <header role="banner">
     
-    <a href="/index.html" rel="home">Rikki Bochow</a>
+    <a href="/index.html" rel="home">ikalator</a> 
+    <a href="#nav" id="nav-btn">Article navigation</a>
     
   </header>
     
@@ -59,6 +60,17 @@
     </section>
   
   </main>
+  
+  <nav id="nav" role="navigation" aria-labelledby="nav-btn">
+    <ul>
+      <li><a href="/index.html" rel="home">Home</a></li>
+      
+      {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      
+    </ul>
+  </nav>
   
   <footer role="contentinfo">
     
