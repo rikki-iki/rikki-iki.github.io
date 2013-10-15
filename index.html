@@ -54,7 +54,7 @@
 
         <h1 itemprop="name" class="h2"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
         <p itemprop="description">{{ post.excerpt }}</p>
-        <footer><time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time></footer>
+        <footer><time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time></footer>
 
       </article>
       
