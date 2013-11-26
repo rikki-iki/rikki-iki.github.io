@@ -3,7 +3,7 @@
  * Contasts calculated with: http://leaverou.github.io/contrast-ratio
  * to ensure accessibility is good.
  *
- * bright red: hsl(351,80%,49%) - contrast 4.8 (AA);
+ * bright red: hsl(351,80%,48%) - contrast 4.8 (AA);
  * dark red: hsl(351,80%,38%) - contrast 7.1 (AAA);
 */
 
@@ -23,7 +23,7 @@ html{
   font: 1em/1.625em "adelle","Georgia",serif;
   overflow-y:scroll;
   min-height:100%;
-  color: hsl(0,0%,13%);
+  color: hsl(0,0%,20%);
   -webkit-overflow-scrolling: touch;
 	-webkit-tap-highlight-color: hsl(351,80%,38%);
 }
@@ -378,7 +378,7 @@ figure figcaption {
     layout
 \*------------------------------------*/
 html {
-  border-left: 1em solid hsl(351,80%,49%);
+  border-left: 2em solid hsl(351,80%,48%);
   padding: 2em 2em 2em 1em;
 }
 body {
