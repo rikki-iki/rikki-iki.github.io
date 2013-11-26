@@ -250,19 +250,19 @@ article > footer {
  * Sometimes, particularly on larger projects, it is useful to scope link
  * styling only to anchors which have `href` attributes.
  */
-a:link{
+a{
   color: hsl(351,80%,38%);
-  border-bottom: 1px dotted hsl(351,80%,38%);
+  border-bottom: 3px solid transparent;
   
-  -webkit-transition:color .2s linear, background .2s linear;
-	-moz-transition:color .2s linear, background .2s linear;
-	transition:color .2s linear, background .2s linear;
+  -webkit-transition:color .2s linear, background .2s linear, border .2s linear;
+	-moz-transition:color .2s linear, background .2s linear, border .2s linear;
+	transition:color .2s linear, background .2s linear, border .2s linear;
 }
   a:hover,
   a:active,
   a:focus{
     text-decoration:none;
-    border-bottom: 3px solid;
+    border-color: hsl(351,80%,48%);
   }
   a:active,
   a:focus{
@@ -279,8 +279,18 @@ a:link{
     * Make the visited state nicer
     */
   a:visited {
-    color: hsl(351,80%,38%);
+    
   }
+
+h1 a, h2 a {
+  display: inline-block;
+  padding-bottom: 6px;
+  border-color: #E7CD4D;
+  border-width: 4px;
+}
+h1 a:hover, h2 a:hover {
+  border-color: hsl(351,80%,48%);
+}
   
 /*------------------------------------*\
     lists
