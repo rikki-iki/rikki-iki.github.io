@@ -402,6 +402,18 @@ footer {
 .nav-btn i:last-child {
   margin-bottom: 0;
 }
+
+.top-btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: #E7CD4D;
+  border: 2px solid #E7CD4D;
+  padding: 0.4em;
+}
+.top-btn:hover,
+.top-btn:focus {
+  color: hsl(351,80%,48%);
+  border-color: hsl(351,80%,48%);
 }
 /*------------------------------------*\
    print
