@@ -376,6 +376,32 @@ footer {
   color: hsl(0,0%,47%);
   font-size: 0.8125em; /* 13px */
   line-height: 1.625em;
+
+.nav-btn {
+  display: inline-block;
+  width: 2em;
+  padding: 0.4em;
+  color: hsl(351,80%,48%);
+  border: 2px solid hsl(351,80%,48%);
+  vertical-align: middle;
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  border-color: hsl(351,80%,38%);
+}
+.nav-btn i {
+  display: block;
+  height: 3px;
+  background: hsl(351,80%,48%);
+  margin-bottom: 3px;
+}
+.nav-btn:hover i,
+.nav-btn:focus i {
+  background: hsl(351,80%,38%);
+}
+.nav-btn i:last-child {
+  margin-bottom: 0;
+}
 }
 /*------------------------------------*\
    print
