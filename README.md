@@ -1,4 +1,4 @@
-ikalator.github.com
+rikki-iki.github.io
 ===================
 
 Open source design project for the website: http://ikalator.com/
