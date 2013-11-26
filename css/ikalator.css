@@ -401,6 +401,18 @@ footer {
   font-size: 0.8125rem;
   line-height: 1.625em;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin-bottom: 2em;
+}
+.ikalator {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+  border-color: #E7CD4D;
+}
 
 .nav-btn {
   display: inline-block;
