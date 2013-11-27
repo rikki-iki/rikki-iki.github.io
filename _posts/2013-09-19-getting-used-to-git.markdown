@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Getting used to git
+title: Getting used to Git
 excerpt: How I got started using Git and the concepts that helped me to get Git into my every day process.
 ---
 
@@ -10,13 +10,13 @@ But I always felt a little unprofessional. Everyone was talking about version co
 
 So I installed it. I opened Terminal, with a command line cheat sheet up and trudged along until I had a repo with a readme file.
 
-# But I still didn’t really Git it
+## But I still didn’t really Git it
 
 It seemed like it would add 20% to my regular process and I wasn’t used to the command line. I had to get up the cheat sheet or google how to do the most basic things. I know repetition is the key to learning but I didn’t have the time.
 
 I decided to start on personal projects outside of work. I found a GUI I liked ([Tower](http://www.git-tower.com)) which really helped to get the fundamental understanding down. I started to see some value; I didn’t have a dozen duplicate files I had to organise for one. It didn’t take too much time to commit and leave a note. Git was OK.
 
-# Until I had no choice.
+## Until I had no choice.
 
 I had to collaborate with another developer on a project! I admitted up front I was still learning Git. I asked before every push to make sure I wouldn’t break anything. My collaborator was very kind and assuring. 
 But I got it now! Everything is recoverable, files can merge together with minimal effort. Changes can be stashed away for later. Everything was organised, dated and annotated. It was beautiful!
@@ -30,30 +30,31 @@ Before Git I **used** Open Source software, but I wasn’t Open Source. I couldn
 
 So if you want to Git started, hopefully this can help:
 
-# The language:
+## The language:
 
-## Repo/repository
+### Repo/repository
 A repo is a folder that git tracks the changes of. 
 There’s a local repo (on your computer) and a remote repo (on something like github.com). 
 
-## Pull
+### Pull
 Grab the latest version from the Remote Repo
 
-## Push
+### Push
 Send my local changes to the Remote Repo
 
-## Diff
+### Diff
 The difference between the previous version of the file and the new version. A patch is just all the diff’s in a file.
 
-## Commit
+### Commit
 A saved snapshot of the file, commit’s never get deleted, you can revert or roll back to them at any time.
 
-## Stage
+### Stage
+[will write this soon!]
 
-## Stash
+### Stash
 Set aside my changes while I try something else
 
-# The basic process
+## The basic process
 1. Initialise local repo, on your desktop
 2. Add remote repo
 3. Add files
