@@ -1,7 +1,0 @@
----
-layout: article
-title: Demo post
-excerpt: Demo blog post to test Jekyll
----
-
-This is a demo post to ensure Jekyll is running properly and my templates work.
