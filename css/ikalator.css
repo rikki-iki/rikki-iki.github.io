@@ -206,14 +206,14 @@ h1,.h1{
 h2,.h2{
   font-size: 2em;     /* 32px */
   font-size: 2rem;
-  line-height: 1em;
+  line-height: 1.2em;
   margin-bottom: 26px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h3,.h3{
   font-size: 1.625em; /* 26px */
   font-size: 1.625rem;
-  line-height: 1em;
+  line-height: 1.3em;
   margin-bottom: 26px;
 }
 h4,.h4{
@@ -413,13 +413,12 @@ footer {
     font-style: normal;
   }
 header {
-  margin-bottom: 2em;
+  margin-bottom: 26px;
 }
   header p {
     font-size: 1.625em; /* 26px */
     font-size: 1.625rem;
-    line-height: 1em;
-    margin-bottom: 26px;
+    line-height: 1.3em;
   }
 .ikalator {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
