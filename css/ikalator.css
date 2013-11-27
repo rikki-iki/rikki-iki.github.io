@@ -5,6 +5,7 @@
  *
  * bright red: hsl(351,80%,48%) - contrast 4.8 (AA);
  * dark red: hsl(351,80%,38%) - contrast 7.1 (AAA);
+ * yellow: hsl(50,76%,60%) - contrast 1.6 (fail, but we won't use it for important bits;
 */
 
 /**
@@ -99,11 +100,11 @@ sup{
  * Set the colour for highlighted text
  */
 ::selection {
-  background-color: hsl(351,80%,38%);
+  background-color: hsl(50,76%,60%);
   color: hsl(0,0%,100%);
 }
 ::moz-selection {
-  background-color: hsl(351,80%,38%);
+  background-color: hsl(50,76%,60%);
   color: hsl(0,0%,100%);
 }
 
@@ -285,7 +286,7 @@ a{
 h1 a, h2 a {
   display: inline-block;
   padding-bottom: 6px;
-  border-color: #E7CD4D;
+  border-color: hsl(50,76%,60%);
   border-width: 4px;
 }
 h1 a:hover, h2 a:hover {
@@ -411,13 +412,14 @@ header {
   display: inline-block;
   vertical-align: middle;
   margin-right: 1em;
-  border-color: #E7CD4D;
+  border-color: hsl(50,76%,60%);
 }
-
+/* open nav link */
 .nav-btn {
   display: inline-block;
   width: 2em;
   padding: 0.4em;
+  background: hsl(0,0%,100%);
   color: hsl(351,80%,48%);
   border: 2px solid hsl(351,80%,48%);
   vertical-align: middle;
@@ -439,18 +441,69 @@ header {
 .nav-btn i:last-child {
   margin-bottom: 0;
 }
-
+/* return to top link */
 .top-btn {
   display: inline-block;
   vertical-align: middle;
-  color: #E7CD4D;
-  border: 2px solid #E7CD4D;
+  color: hsl(50,76%,60%);
+  border: 2px solid hsl(50,76%,60%);
   padding: 0.4em;
 }
 .top-btn:hover,
 .top-btn:focus {
-  color: hsl(351,80%,48%);
-  border-color: hsl(351,80%,48%);
+  color: hsl(351,80%,38%);
+  border-color: hsl(351,80%,38%);
+}
+/* navigation */
+#nav {
+  position: absolute;
+  top: 32px;
+  left: -20em;
+  width: auto;
+  min-width: 10em;
+  max-width: 20em;
+  background: hsl(0,0%,100%);
+  border: 2px solid hsl(351,80%,48%);
+  padding: 0.4em 0.4em 0.5em;
+  text-align: right;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -ms-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
+}
+#nav > ul {
+  text-align: left;
+  padding: 0;
+  list-style: none;
+}
+#nav > ul > li {
+  margin-bottom: 0.6em;
+}
+#nav > ul > li > a {
+  border-color: hsl(50,76%,60%);
+}
+#nav > ul > li > a:hover,
+#nav > ul > li > a:focus {
+  border-color: hsl(351,80%,38%);
+}
+/* close nav link */
+#nav > a {
+  padding: 0.4em;
+  color: hsl(50,76%,60%);
+  border: 2px solid hsl(50,76%,60%);
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8125em; /* 13px */
+  font-size: 0.8125rem;
+  line-height: 1.625em;
+}
+#nav > a:hover,
+#nav > a:focus {
+  color: hsl(351,80%,38%);
+  border-color: hsl(351,80%,38%);
+}
+#nav.visible {
+  left: 0.6em;
 }
 /*------------------------------------*\
    print
