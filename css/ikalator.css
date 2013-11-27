@@ -438,23 +438,23 @@ header {
   border: 2px solid hsl(351,80%,48%);
   vertical-align: middle;
 }
-.nav-btn:hover,
-.nav-btn:focus {
-  border-color: hsl(351,80%,38%);
-}
-.nav-btn i {
-  display: block;
-  height: 3px;
-  background: hsl(351,80%,48%);
-  margin-bottom: 3px;
-}
-.nav-btn:hover i,
-.nav-btn:focus i {
-  background: hsl(351,80%,38%);
-}
-.nav-btn i:last-child {
-  margin-bottom: 0;
-}
+  .nav-btn:hover,
+  .nav-btn:focus {
+    border-color: hsl(351,80%,38%);
+  }
+  .nav-btn i {
+    display: block;
+    height: 3px;
+    background: hsl(351,80%,48%);
+    margin-bottom: 3px;
+  }
+    .nav-btn:hover i,
+    .nav-btn:focus i {
+      background: hsl(351,80%,38%);
+    }
+    .nav-btn i:last-child {
+      margin-bottom: 0;
+    }
 /* return to top link */
 .top-btn {
   display: inline-block;
@@ -463,11 +463,11 @@ header {
   border: 2px solid hsl(50,76%,60%);
   padding: 0.4em;
 }
-.top-btn:hover,
-.top-btn:focus {
-  color: hsl(351,80%,38%);
-  border-color: hsl(351,80%,38%);
-}
+  .top-btn:hover,
+  .top-btn:focus {
+    color: hsl(351,80%,38%);
+    border-color: hsl(351,80%,38%);
+  }
 /* navigation */
 #nav {
   position: absolute;
@@ -486,39 +486,40 @@ header {
   -o-transition: left .5s ease-in-out;
   transition: left .5s ease-in-out;
 }
-#nav > ul {
-  text-align: left;
-  padding: 0;
-  list-style: none;
-}
-#nav > ul > li {
-  margin-bottom: 0.6em;
-}
-#nav > ul > li > a {
-  border-color: hsl(50,76%,60%);
-}
-#nav > ul > li > a:hover,
-#nav > ul > li > a:focus {
-  border-color: hsl(351,80%,38%);
-}
-/* close nav link */
-#nav > a {
-  padding: 0.4em;
-  color: hsl(50,76%,60%);
-  border: 2px solid hsl(50,76%,60%);
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8125em; /* 13px */
-  font-size: 0.8125rem;
-  line-height: 1.625em;
-}
-#nav > a:hover,
-#nav > a:focus {
-  color: hsl(351,80%,38%);
-  border-color: hsl(351,80%,38%);
-}
-#nav.visible {
-  left: 0.6em;
-}
+  #nav > ul {
+    text-align: left;
+    padding: 0;
+    list-style: none;
+  }
+    #nav > ul > li {
+      margin-bottom: 0.6em;
+    }
+      #nav > ul > li > a {
+        border-color: hsl(50,76%,60%);
+      }
+        #nav > ul > li > a:hover,
+        #nav > ul > li > a:focus {
+          border-color: hsl(351,80%,38%);
+        }
+  /* close nav link */
+  #nav > a {
+    padding: 0.4em;
+    color: hsl(50,76%,60%);
+    border: 2px solid hsl(50,76%,60%);
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8125em; /* 13px */
+    font-size: 0.8125rem;
+    line-height: 1.625em;
+  }
+    #nav > a:hover,
+    #nav > a:focus {
+      color: hsl(351,80%,38%);
+      border-color: hsl(351,80%,38%);
+    }
+  #nav.visible {
+    left: 0.6em;
+  }
+  
 /*------------------------------------*\
    print
 \*------------------------------------*/
