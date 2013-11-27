@@ -1,10 +1,10 @@
     <ul>
-      <li><a href="/index.html" rel="home">Home</a></li>
+      <li><a href="/index.html" rel="home">About ikalator</a></li>
       
       {% for post in site.posts limit:5 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
       
     </ul>
-    <a href="#ikalator">Return to content</a>
+    <a href="#ikalator" onclick="toggleClass(document.getElementById('nav'), 'visible'); return false;">Close</a>
     
