@@ -3,9 +3,9 @@
  * Contasts calculated with: http://leaverou.github.io/contrast-ratio
  * to ensure accessibility is good.
  *
- * bright red: hsl(351,80%,48%) - contrast 4.8 (AA);
- * dark red: hsl(351,80%,38%) - contrast 7.1 (AAA);
- * yellow: hsl(50,76%,60%) - contrast 1.6 (fail, but we won't use it for important bits;
+ * gray: hsl(0,0%,35%) - contrast 7 (AAA);
+ * dark gray: hsl(0,0%,20%) - contrast 12.6 (AAA);
+ * green: hsl(162,99%,33%) - contrast 3.1 (AA);
 */
 
 /**
@@ -24,9 +24,9 @@ html{
   font: 1.125em/1.75em "adelle","Georgia",serif;
   overflow-y:scroll;
   min-height:100%;
-  color: hsl(0,0%,20%);
+  color: hsl(0,0%,35%);
   -webkit-overflow-scrolling: touch;
-	-webkit-tap-highlight-color: hsl(351,80%,38%);
+	-webkit-tap-highlight-color: hsl(0,0%,35%);
 }
 body {
   font-size: 1.125em; /* 18px */
@@ -100,11 +100,11 @@ sup{
  * Set the colour for highlighted text
  */
 ::selection {
-  background-color: hsl(50,76%,60%);
+  background-color: hsl(162,99%,33%);
   color: hsl(0,0%,100%);
 }
 ::moz-selection {
-  background-color: hsl(50,76%,60%);
+  background-color: hsl(162,99%,33%);
   color: hsl(0,0%,100%);
 }
 
@@ -172,12 +172,12 @@ pre {
     color: hsl(0,0%,100%);
   }
 .code-comment {
-  color: hsl(0,0%,47%);
+  color: hsl(0,0%,58%);
 }
 code,
 samp,
 kbd {
-  color: hsl(351,80%,38%);
+  color: hsl(0,0%,35%);
 }
 
 /*------------------------------------*\
@@ -195,49 +195,45 @@ h1,.h1,h2,.h2,h3,.h3,
 h4,.h4,h5,.h5,h6,.h6 {
   text-rendering: optimizelegibility;
   font-weight:normal;
+  color: hsl(0,0%,20%);
+  margin-bottom: 26px;
 }
 h1,.h1{
   font-size: 2.625em; /* 42px */
   font-size: 2.625rem;
   line-height: 1em;
-  margin-bottom: 26px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h2,.h2{
   font-size: 2em;     /* 32px */
   font-size: 2rem;
   line-height: 1.2em;
-  margin-bottom: 26px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h3,.h3{
   font-size: 1.625em; /* 26px */
   font-size: 1.625rem;
   line-height: 1.3em;
-  margin-bottom: 26px;
 }
 h4,.h4{
   font-size: 1.25em;  /* 20px */
   font-size: 1.25rem;
   line-height: 1em;
-  margin-bottom: 26px;
 }
 h5,.h5{
   font-size: 1.125em; /* 18px */
   font-size: 1.125rem;
   line-height: 1em;
-  margin-bottom: 26px;
 }
 h6,.h6{
   font-size: 1em;     /* 16px */
   font-size: 1rem;
   line-height: 1em;
-  margin-bottom: 26px;
 }
 h1 small,
 h2 small {
   font-weight: normal;
-  color: hsl(0,0%,47%);
+  color: hsl(0,0%,58%);
 }
 
 p,
@@ -252,7 +248,7 @@ article > footer {
  * styling only to anchors which have `href` attributes.
  */
 a{
-  color: hsl(351,80%,38%);
+  color: hsl(0,0%,35%);
   border-bottom: 3px solid transparent;
   
   -webkit-transition:color .2s linear, background .2s linear, border .2s linear;
@@ -263,7 +259,7 @@ a{
   a:active,
   a:focus{
     text-decoration:none;
-    border-color: hsl(351,80%,48%);
+    border-color: hsl(0,0%,20%);
   }
   a:active,
   a:focus{
@@ -282,15 +278,21 @@ a{
   a:visited {
     
   }
-
+p a {
+  color: hsl(162,99%,33%);
+}
+  p a:hover,
+  p a:focus {
+    border-color: hsl(162,99%,33%);
+  }
 h1 a, h2 a {
   display: inline-block;
   padding-bottom: 6px;
-  border-color: hsl(50,76%,60%);
+  border-color: hsl(162,99%,33%);
   border-width: 4px;
 }
 h1 a:hover, h2 a:hover {
-  border-color: hsl(351,80%,48%);
+  border-color: hsl(0,0%,20%);
 }
   
 /*------------------------------------*\
@@ -327,7 +329,7 @@ figure > img {
 figure figcaption {
   display: block;
   font-weight: normal;
-  color: hsl(0,0%,47%);
+  color: hsl(0,0%,58%);
 }
 /*------------------------------------*\
    helper
@@ -395,7 +397,7 @@ figure figcaption {
     layout
 \*------------------------------------*/
 html {
-  border-left: 2em solid hsl(351,80%,48%);
+  border-left: 2em solid hsl(162,99%,33%);
   padding: 2em 2em 2em 1em;
 }
 body {
@@ -403,7 +405,7 @@ body {
   max-width: 685px;
 }
 footer {
-  color: hsl(0,0%,47%);
+  color: hsl(0,0%,58%);
   font-size: 0.8125em; /* 13px */
   font-size: 0.8125rem;
   line-height: 1.625em;
@@ -425,31 +427,30 @@ header {
   display: inline-block;
   vertical-align: middle;
   margin-right: 1em;
-  border-color: hsl(50,76%,60%);
+  border-color: hsl(162,99%,33%);
 }
 /* open nav link */
 .nav-btn {
   display: inline-block;
   width: 2em;
   padding: 0.4em;
-  background: hsl(0,0%,100%);
-  color: hsl(351,80%,48%);
-  border: 2px solid hsl(351,80%,48%);
+  color: hsl(0,0%,35%);
+  border: 2px solid hsl(0,0%,35%);
   vertical-align: middle;
 }
   .nav-btn:hover,
   .nav-btn:focus {
-    border-color: hsl(351,80%,38%);
+    border-color: hsl(0,0%,20%);
   }
   .nav-btn i {
     display: block;
     height: 3px;
-    background: hsl(351,80%,48%);
+    background: hsl(0,0%,35%);
     margin-bottom: 3px;
   }
     .nav-btn:hover i,
     .nav-btn:focus i {
-      background: hsl(351,80%,38%);
+      background: hsl(0,0%,20%);
     }
     .nav-btn i:last-child {
       margin-bottom: 0;
@@ -458,14 +459,14 @@ header {
 .top-btn {
   display: inline-block;
   vertical-align: middle;
-  color: hsl(50,76%,60%);
-  border: 2px solid hsl(50,76%,60%);
+  color: hsl(162,99%,33%);
+  border: 2px solid hsl(162,99%,33%);
   padding: 0.4em;
 }
   .top-btn:hover,
   .top-btn:focus {
-    color: hsl(351,80%,38%);
-    border-color: hsl(351,80%,38%);
+    color: hsl(0,0%,35%);
+    border-color: hsl(0,0%,20%);
   }
 /* navigation */
 #nav {
@@ -476,7 +477,7 @@ header {
   min-width: 10em;
   max-width: 20em;
   background: hsl(0,0%,100%);
-  border: 2px solid hsl(351,80%,48%);
+  border: 2px solid hsl(0,0%,35%);
   padding: 0.4em 0.4em 0.5em;
   text-align: right;
   -webkit-transition: left .5s ease-in-out;
@@ -494,17 +495,17 @@ header {
       margin-bottom: 0.6em;
     }
       #nav > ul > li > a {
-        border-color: hsl(50,76%,60%);
+        border-color: hsl(162,99%,33%);
       }
         #nav > ul > li > a:hover,
         #nav > ul > li > a:focus {
-          border-color: hsl(351,80%,38%);
+          border-color: hsl(0,0%,35%);
         }
   /* close nav link */
   #nav > a {
     padding: 0.4em;
-    color: hsl(50,76%,60%);
-    border: 2px solid hsl(50,76%,60%);
+    color: hsl(162,99%,33%);
+    border: 2px solid hsl(162,99%,33%);
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.8125em; /* 13px */
     font-size: 0.8125rem;
@@ -512,8 +513,8 @@ header {
   }
     #nav > a:hover,
     #nav > a:focus {
-      color: hsl(351,80%,38%);
-      border-color: hsl(351,80%,38%);
+      color: hsl(0,0%,35%);
+      border-color: hsl(0,0%,20%);
     }
   #nav.visible {
     left: 0.6em;
@@ -546,7 +547,7 @@ header {
   }
   pre,
   blockquote {
-    border: 1px solid hsl(0,0%,47%);
+    border: 1px solid hsl(0,0%,58%);
     page-break-inside: avoid;
   }
   abbr[title]:after {
