@@ -33,26 +33,27 @@ So if you want to Git started, hopefully this can help:
 ## The language:
 
 ### Repo/repository
-A repo is a folder that git tracks the changes of. 
+A repository is a folder that git tracks the changes of. 
 There’s a local repo (on your computer) and a remote repo (on something like github.com). 
 
 ### Pull
-Grab the latest version from the Remote Repo
+Grab the latest version from the remote repository.
 
 ### Push
-Send my local changes to the Remote Repo
+Send my local changes to the remote repository.
 
-### Diff
-The difference between the previous version of the file and the new version. A patch is just all the diff’s in a file.
+### Stage
+Designate a portion of code that is ready to be commited.
+You can break up your changes into logical commits or commit them all at once.
 
 ### Commit
 A saved snapshot of the file, commit’s never get deleted, you can revert or roll back to them at any time.
 
-### Stage
-[will write this soon!]
-
 ### Stash
-Set aside my changes while I try something else
+Set aside my changes while I try something else.
+
+### Diff
+The difference between the previous version of the file and the new version. A patch is just all the diff’s in a file.
 
 ## The basic process
 1. Initialise local repo, on your desktop
