@@ -6,12 +6,13 @@ excerpt: Some of my favourite articles and tools for learning responsive design
 
 I started teaching myself how to use media queries towards the end of 2010. It was all new and exciting. I read about various methodologies like mobile first, then content first and progressive enhancement. 
 
-As is my nature, I’ve saved the articles that and tools that I’ve found useful...
+Here are some of the articles and tools that I’ve found useful...
 
 ## Tools and references
 
 From the Filament Group:
-* 	[Responsive carousel](https://github.com/filamentgroup/responsive-carousel)
+
+* [Responsive carousel](https://github.com/filamentgroup/responsive-carousel)
 * [appendAround](https://github.com/filamentgroup/AppendAround)
 * [Picturefill](https://github.com/scottjehl/picturefill/)
 * One I’m yet to test out: [AjaxInclude](https://github.com/filamentgroup/Ajax-Include-Pattern)
