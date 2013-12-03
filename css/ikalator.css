@@ -21,7 +21,7 @@ pre {
   margin-bottom: 1em;
 }
 html{
-  font: 1em/1.625em "adelle","Georgia",serif;
+  font: 1.125em/1.75em "adelle","Georgia",serif;
   overflow-y:scroll;
   min-height:100%;
   color: hsl(0,0%,20%);
