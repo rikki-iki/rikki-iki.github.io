@@ -308,11 +308,18 @@ ol {
  */
 li{
   line-height:26px;
-  > ul,
-  > ol{
+}
+  li > ul,
+  li > ol{
     margin-bottom:0;
   }
-}
+  li a {
+    color: hsl(162,99%,33%);
+  }
+    li a:hover,
+    li a:focus {
+      border-color: hsl(162,99%,33%);
+    }
 /*------------------------------------*\
     images
 \*------------------------------------*/
