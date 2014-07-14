@@ -49,3 +49,9 @@ Nodequeue is an alternative to Draggable views, which has something called a Sma
 Dashboard is a core module with Drupal 7 and one I've overlooked for a while now. In combination with Admin Views you can create wuite a useful content dashboard tailored to the editors common tasks.
 
 One other thing we've been working on recently is providing user documentation, tailored to each customised Drupal install, that is accessibly right inside Drupal. With an index of tasks/topics shown on the dashboard and a 'Help' link readily available in the Admin Menu.
+
+## Custom contextual links
+
+A part of this I haven't started digging into yet is Custom Contextual Links. Which lets you add your own links to the little edit cog that shows up when you hover certain things like nodes, blocks and views (if you haven't played with them even I recommend it - the Contextual Links module is in Drupal 7 core).
+
+[https://www.drupal.org/project/ccl](https://www.drupal.org/project/ccl)
