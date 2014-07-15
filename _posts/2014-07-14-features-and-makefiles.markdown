@@ -18,11 +18,11 @@ Why does it help to be in code? If it's stored in the database it's much harder 
 
 ### What do my features look like...
 
-A config feature that has image styles, site information, text formats.. really general things.
-A standard page content type with basic fields.
-A blog post content type, blog index view and blog category taxonomy.
-A slideshow content type and view.
-A contact page content type with contact form fields and email notifications.
+* A config feature that has image styles, site information, text formats.. really general things.
+* A standard page content type with basic fields.
+* A blog post content type, blog index view and blog category taxonomy.
+* A slideshow content type and view.
+* A contact page content type with contact form fields and email notifications.
 
 5 simple Features that setup the basics of most content based websites or blogs. I can easily swap and change as well, if they don't want a slideshow (thank god) I just don't install it.
 
