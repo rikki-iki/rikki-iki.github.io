@@ -1,4 +1,4 @@
 markdown: rdiscount
-highlighter: true
+highlighter: pygments
 permalink: /:year/:month/:title
 paginate: 10
