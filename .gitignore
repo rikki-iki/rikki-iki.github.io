@@ -1,2 +1,7 @@
 /_site/
 /_drafts/
+
+/.bundle/
+/.sass-cache/
+/node_modules/
+/vendor/
