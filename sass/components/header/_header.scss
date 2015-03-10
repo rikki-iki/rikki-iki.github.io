@@ -1,0 +1,45 @@
+// Header
+//
+// Markup: header.html
+//
+// Styleguide components.header
+
+.header,
+%header {
+  @extend %layout-max;
+  background: image_url('bg--header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__tagline {
+    @include font-decorative;
+    margin-top: 0;
+
+    b {
+      @include font-regular;
+      @include font-bold;
+    }
+  }
+
+  &__role {
+    @include font-decorative;
+    margin-bottom: 0;
+    text-transform: lowercase;
+  }
+
+  &__social {
+    font-family: $body-font;
+    margin-top: 0;
+  }
+}
+
+%header-extend__top {
+
+}

@@ -1,0 +1,9 @@
+@mixin underline-on-hover {
+  text-decoration: none;
+  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: currentColor;
+  }
+}

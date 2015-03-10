@@ -1,0 +1,98 @@
+// Typography
+//
+
+// Font-family mixins
+@mixin font-regular {
+  font-family: $body-font;
+  font-weight: $normal;
+  font-style: normal;
+}
+@mixin font-heading {
+  font-family: $heading-font;
+  font-weight: $bold;
+  font-style: normal;
+}
+@mixin font-decorative {
+  font-family: $decorative-font;
+  font-weight: $normal;
+  font-style: normal;
+}
+
+// Font-style mixins
+@mixin font-bold {
+  font-weight: $bold;
+  font-style: normal;
+}
+@mixin font-italic {
+  font-weight: $normal;
+  font-style: italic;
+}
+
+// Font-size mapping
+$sizes: (
+  xxxlrg: (
+    $ms-xxxlrg,
+    $ms-smscr-xxxlrg
+  ),
+  xxlrg: (
+    $ms-xxlrg,
+    $ms-smscr-xxlrg
+  ),
+  xlrg: (
+    $ms-xlrg,
+    $ms-smscr-xlrg
+  ),
+  lrg: (
+    $ms-lrg,
+    $ms-smscr-lrg
+  ),
+  med:  (
+    $ms-med,
+    $ms-smscr-med
+  ),
+  norm:  (
+    $ms-norm,
+    $ms-smscr-norm
+  ),
+  small:  (
+    $ms-small,
+    $ms-smscr-small
+  ),
+  tiny:  (
+    $ms-tiny,
+    $ms-smscr-tiny
+  )
+);
+
+@each $name, $size in $sizes {
+  %font-size-#{$name} {
+    @include adjust-font-size-to( nth($size, 2) );
+
+    @include breakpoint($small) {
+      @include adjust-font-size-to( nth($size, 1) );
+    }
+  }
+}
+
+// Style any number of headings in one fell swoop, e.g.:
+//
+//  .foo{
+//    @include headings(1, 3){
+//      color:#BADA55;
+//    }
+//  }
+//  Outputs heading and heading class
+//
+@mixin headings($from: 1, $to: 6){
+  %base-heading {
+    @content
+  }
+
+  @if $from >= 1 and $to <= 6{
+    @for $i from $from through $to{
+      h#{$i}, .h#{$i}{
+        @extend %base-heading;
+      }
+    }
+  }
+}

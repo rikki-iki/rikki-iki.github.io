@@ -8,80 +8,49 @@
   <!-- meta -->
   <meta charset="UTF-8">
   {% include mobile_meta.html %}
-  
+
   <!-- dns prefetch for faster loading of external resources -->
   {% include dns_prefetch.html %}
-  
+
   <title>ikalator.com</title>
   <meta name="author" content="Rikki Bochow">
-  <meta name="description" content="Learnings about Front-end and Drupal development">
-  
+  <meta name="description" content="Designer and Front-end Drupal developer">
+
   <!-- stylesheet -->
-  <link rel="stylesheet" href="/css/ikalator.css">
-  
+  <link rel="stylesheet" href="/css/style.css">
+
   <!-- javascript -->
   {% include javascript.html %}
-  
+
   <!-- favicons -->
   {% include favicons.html %}
-    
+
 </head>
 <body id="ikalator">
-  
+
   <header role="banner">
-    
-    <a href="/index.html" class="ikalator" rel="home">ikalator</a> 
-    <a href="#nav" class="nav-btn" id="nav-btn" onclick="toggleClass(document.getElementById('nav'), 'visible'); return false;">
-      <span class="h">Article navigation</span>
-      <i></i>
-      <i></i>
-      <i></i>
-    </a>
-    
+
+    <h1 class="header__title"><a href="/index.html" class="ikalator" rel="home">ikalator</a></h1>
+
+    <p class="header__tagline">aka <b>rikki_iki</b>. aka <b>loco_bochow</b></p>
+
+    <p class="header__role">Designer &amp; Front-end Developer</p>
+
+    <p class="header__social">
+        <a href="http://drupal.org/u/rikki-iki/">Drupal</a> /
+        <a href="http://github.com/rikki-iki/">GitHub</a> /
+        <a href="http://instagram.com/rikki_iki/">Instagram</a> /
+        <a href="http://www.pinterest.com/rikkiki/">Pinterest</a> /
+        <a href="http://twitter.com/rikki_iki">Twitter</a> /
+        <a href="http://last.fm/user/rikki_iki">Last.fm</a>
+    </p>
+
   </header>
-    
-  <main role="main" class="wrapper">
 
-    <section class="intro">
-      
-      <h1>Hi, I'm Rikki</h1>
-      
-      <p>I'm a designer, front-end developer, Drupal site builder and (simple) module developer. I work at <a href="http://weaveweb.com.au">Weave Web</a>.</p>
-      
-      <p>This is an open source design project and technical blog. See the <a href="https://github.com/rikki-iki/ikalator.github.com/issues">GitHub issue tracker</a> for details about it's development and progress.</p>
-      
-    </section>
-    
-    <section itemscope itemtype="http://schema.org/Blog" class="articles">
-    
-      <h1 itemprop="name">Articles</h1>
-      
-      {% for post in site.posts %}
-
-      <article role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-
-        <h1 itemprop="name" class="h3"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
-        <p itemprop="description">{{ post.excerpt }}</p>
-        <footer><time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time></footer>
-
-      </article>
-      
-      {% endfor %}
-    
-    </section>
-  
-  </main>
-  
-  <nav id="nav" role="navigation" aria-labelledby="nav-btn">
-  
-    {% include nav.html %}
-    
-  </nav>
-  
   <footer role="contentinfo">
-    
+
     {% include footer.html %}
-    
+
   </footer>
 
 </body>
