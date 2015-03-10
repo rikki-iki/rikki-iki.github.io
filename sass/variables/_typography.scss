@@ -1,0 +1,49 @@
+
+//
+// Typography
+//
+
+// Modular scale
+$ms-base:             22px; // converts to rems
+$ms-ratio:            $golden; // 1.618
+
+// Modular scale settings
+$rhythm-unit:         'rem';
+$rem-with-px-fallback:true;
+
+// Small Screen Variables
+$ms-smscr-ratio:      $minor-third;
+
+$ms-smscr-norm:       $ms-base;
+$ms-smscr-med:        ms(2, $ms-base, $ms-smscr-ratio);
+$ms-smscr-lrg:        ms(3, $ms-base, $ms-smscr-ratio);
+$ms-smscr-xlrg:       ms(4, $ms-base, $ms-smscr-ratio);
+$ms-smscr-xxlrg:      ms(5, $ms-base, $ms-smscr-ratio);
+$ms-smscr-xxxlrg:     ms(6, $ms-base, $ms-smscr-ratio);
+$ms-smscr-small:      ms(0.9, $ms-base, $ms-smscr-ratio);
+$ms-smscr-tiny:       ms(0.75, $ms-base, $ms-smscr-ratio);
+
+// Default Variables
+$ms-norm:             $ms-base;
+$ms-med:              ms(2);
+$ms-lrg:              ms(3);
+$ms-xlrg:             ms(4);
+$ms-xxlrg:            ms(5);
+$ms-xxxlrg:           ms(6);
+$ms-small:            ms(0.9);
+$ms-tiny:             ms(0.75);
+
+// Vertical rhythym settings
+$base-font-size:    $ms-norm;
+$base-line-height:  $ms-med;
+$min-line-padding:  1px;
+
+// Font families
+$body-font:         'futura-pt', sans-serif;
+$heading-font:      'mostra-nuova', sans-serif;
+$decorative-font:   'coquette', fantasy;
+
+// Font Weights
+$light:             300;
+$normal:            400;
+$bold:              700;
