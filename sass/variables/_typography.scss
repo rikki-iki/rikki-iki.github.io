@@ -41,7 +41,7 @@ $min-line-padding:  1px;
 // Font families
 $body-font:         'futura-pt', sans-serif;
 $heading-font:      'mostra-nuova', sans-serif;
-$decorative-font:   'coquette', sans-serif;
+$decorative-font:   $heading-font;
 
 // Font Weights
 $light:             300;

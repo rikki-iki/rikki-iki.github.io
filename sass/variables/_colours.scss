@@ -4,19 +4,19 @@
 // to ensure accessibility is good.
 
 // Base Colors
-$white:             #000000;
+$white:             #ffffff;
 $black:             #111111;
-$grey--off-white:   #f0f0e5;
+$grey--off-white:   #efefef;
 $grey--dark:        hsl(0,0%,35%);
 $grey--light:       #e3e5bf;
 
 // Brand Colors
-$brand-primary:    #827b00;
-$brand-secondary:  #003663;
-$brand-contrast:   #448ccb;
+$brand-primary:    #239186;
+$brand-secondary:  #173862;
+$brand-contrast:   #ffdd15;
 
 // Semantic Colors
-$body-background-color:     $grey--off-white;
+$body-background-color:     $white;
 $base-font-color:           $brand-secondary;
 
 $border-color:              $grey--light;
@@ -26,5 +26,5 @@ $title-color:               $brand-primary;
 $heading-color:             $brand-secondary;
 
 $link-color:                $brand-primary;
-$link-color--focus:         $brand-contrast;
+$link-color--focus:         $brand-secondary;
 $link-color--visited:       $link-color;

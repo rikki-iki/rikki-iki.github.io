@@ -65,8 +65,8 @@ small {
 
 // Paragraphs
 p {
-  @include margin-leader(1, $base-font-size);
-  @include margin-trailer(1, $base-font-size);
+  @include margin-leader(.5, $base-font-size);
+  @include margin-trailer(.5, $base-font-size);
 }
 
 // Set the colour for highlighted text

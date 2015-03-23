@@ -7,23 +7,24 @@
 .header,
 %header {
   @extend %layout-max;
-  background: image_url('bg--header.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
   text-align: center;
 
+  &__logo {
+    margin-bottom: .5rem;
+  }
+
   &__title {
+    @extend %element-invisible;
     margin-bottom: 0;
   }
 
   &__tagline {
     @include font-decorative;
-    margin-top: 0;
+    @include margin-leader(0, $base-font-size);
+    @include margin-trailer(1, $base-font-size);
 
     b {
-      @include font-regular;
       @include font-bold;
     }
   }
@@ -36,10 +37,6 @@
 
   &__social {
     font-family: $body-font;
-    margin-top: 0;
+    margin: 0;
   }
-}
-
-%header-extend__top {
-
 }
