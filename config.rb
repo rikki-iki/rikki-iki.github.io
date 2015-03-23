@@ -11,6 +11,7 @@
 require 'breakpoint'
 require 'sass-globbing'
 require 'singularitygs'
+require 'modular-scale'
 
 # Location of the theme's resources.
 css_dir         = "css"
