@@ -1,4 +1,0 @@
-markdown: rdiscount
-highlighter: pygments
-permalink: /:year/:month/:title
-paginate: 10
