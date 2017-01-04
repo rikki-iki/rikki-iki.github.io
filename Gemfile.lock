@@ -52,3 +52,6 @@ DEPENDENCIES
   sass-globbing (~> 1.1.1)
   scss-lint (~> 0.33.0)
   singularitygs (~> 1.4)
+
+BUNDLED WITH
+   1.10.3

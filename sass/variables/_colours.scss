@@ -6,25 +6,24 @@
 // Base Colors
 $white:             #ffffff;
 $black:             #111111;
-$grey--off-white:   #efefef;
+$grey--off-white:   #fdfdff;
 $grey--dark:        hsl(0,0%,35%);
 $grey--light:       #e3e5bf;
 
 // Brand Colors
-$brand-primary:    #239186;
-$brand-secondary:  #173862;
-$brand-contrast:   #ffdd15;
+$brand-primary:    #00f;
+$brand-secondary:  #0ff;
+$brand-contrast:   #fff;
 
 // Semantic Colors
-$body-background-color:     $white;
-$base-font-color:           $brand-secondary;
+$body-background-color:     $grey--off-white;
+$base-font-color:           $brand-primary;
 
-$border-color:              $grey--light;
+$border-color:              $brand-primary;
 $border-color--featured:    $brand-primary;
 
 $title-color:               $brand-primary;
-$heading-color:             $brand-secondary;
+$heading-color:             $brand-primary;
 
 $link-color:                $brand-primary;
 $link-color--focus:         $brand-secondary;
-$link-color--visited:       $link-color;

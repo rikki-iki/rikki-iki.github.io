@@ -2,25 +2,15 @@
 //
 
 a {
-  @extend %underline-on-hover;
   @include single-transition(all, .2s, linear);
   color: $link-color;
-  @if support-legacy-browser(ie, '10') {
-    // Remove the gray background color from active links in IE 10.
-    background-color: transparent;
-  }
+  border-bottom: 2px solid $link-color;
 
   &:hover,
   &:focus,
   &:active {
     outline: none;
-    color: $link-color--focus;
-    border-color: currentColor;
-  }
-
-  &:visited {
-    color: $link-color--visited;
-    border-color: currentColor;
+    background-color: $link-color--focus;
   }
 
   &:active {
