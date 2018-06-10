@@ -1,0 +1,6 @@
+{
+  "extends": "./app/core/.eslintrc.json",
+  "rules": {
+    "no-mutable-exports": [0]
+  }
+}
