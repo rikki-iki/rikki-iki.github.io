@@ -1,0 +1,13 @@
+// Layout
+//
+
+// Breakpoints
+$small:           breakpoint-to-base-em(480px);
+$medium:          breakpoint-to-base-em(760px);
+$large:           breakpoint-to-base-em(960px);
+$x-large:         breakpoint-to-base-em(1200px);
+
+$small-end:       max-width (760px - 1px);
+$medium-end:      max-width (960px - 1px);
+
+@include breakpoint-set('to ems', true);

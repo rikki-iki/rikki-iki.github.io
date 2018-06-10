@@ -2,9 +2,9 @@
 //
 
 a {
-  @include single-transition(all, .2s, linear);
-  color: $link-color;
-  border-bottom: 2px solid $link-color;
+  transition: all .2s linear;
+  color: inherit;
+  border-bottom: 2px solid currentColor;
   text-decoration: none;
 
   &:hover,

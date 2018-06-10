@@ -1,24 +1,11 @@
 // Typography
 //
 
-// Font-family mixins
-@mixin font-regular {
-  font-family: $body-font;
-  font-weight: $normal;
-  font-style: normal;
-}
-@mixin font-heading {
-  font-family: $heading-font;
-  font-weight: $bold;
-  font-style: normal;
-}
-@mixin font-decorative {
-  font-family: $decorative-font;
-  font-weight: $normal;
-  font-style: normal;
-}
-
 // Font-style mixins
+@mixin font-regular {
+  font-weight: $normal;
+  font-style: normal;
+}
 @mixin font-bold {
   font-weight: $bold;
   font-style: normal;
@@ -53,23 +40,15 @@ $sizes: (
   norm:  (
     $ms-norm,
     $ms-smscr-norm
-  ),
-  small:  (
-    $ms-small,
-    $ms-smscr-small
-  ),
-  tiny:  (
-    $ms-tiny,
-    $ms-smscr-tiny
   )
 );
 
 @each $name, $size in $sizes {
   %font-size-#{$name} {
-    @include adjust-font-size-to( nth($size, 2) );
+    font-size: nth($size, 2);
 
     @include breakpoint($small) {
-      @include adjust-font-size-to( nth($size, 1) );
+      font-size: nth($size, 1);
     }
   }
 }
