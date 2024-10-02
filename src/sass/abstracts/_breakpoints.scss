@@ -1,8 +1,0 @@
-@mixin show-at($breakpoint, $display:'block') {
-  display: none;
-
-  @include breakpoint($breakpoint) {
-    display: $display;
-    @content
-  }
-}
