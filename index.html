@@ -5,103 +5,76 @@
   <!-- meta -->
   <meta charset="UTF-8">
   <meta http-equiv="cleartype" content="on">
-  <meta name="MobileOptimized" content="320">
+  <meta name="MobileOptimized" content="width">
   <meta name="HandheldFriendly" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
 
-
-  <!-- dns prefetch for faster loading of external resources -->
-  <link rel="dns-prefetch" href="//use.typekit.net">
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <!--[if IE]><link rel="dns-prefetch" href="//html5shiv.googlecode.com/"><![endif]-->
-
-
-  <title>Rikki Bochow</title>
-  <meta name="author" content="Rikki Bochow">
+  <title>ikalator</title>
+  <meta name="author" content="rikk_iki">
   <meta name="description" content="Designer and Front-end Drupal developer">
 
   <!-- stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root { 
+      --fg: light-dark(#1c1b22, antiquewhite);
+      --bg: light-dark(antiquewhite, #1c1b22);
+      --accent: light-dark(blue, fuchsia);
 
-  <!-- javascript -->
-  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="https://use.typekit.net/kvv7nqu.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+      color-scheme: light dark;
+      color: var(--fg);
+      background-color: var(--bg);
+      font-family: system-ui, sans-serif;
+      font-size: clamp(1.5rem, 6.5vw, 8vh);
+      font-weight: bold;
+      text-transform: lowercase;
+      text-wrap: pretty;
+    }
+    html {
+      height: 100vh;
+      place-content: center;
+    }
+    body {
+      width: min(100%, 20ch);
+      margin: auto;
+      padding: 1em;
 
-  <!-- asynchronous tracking code can go in the <head> -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-44285853-1', 'ikalator.com');
-      ga('send', 'pageview');
-  </script>
+      & * {
+        margin: unset;
+        font-size: unset;
+      }
+    }
+    p {
+      text-indent: 2ch;
+    }
+    :any-link {
+      color: var(--accent);
+      text-underline-offset: 0.08em;
+      
+      &:active {
+        text-underline-offset: 0.12em; 
+      }
 
+      &:focus-visible {
+        outline: dashed 0.08em var(--fg);
+      }
+
+      &:hover:not(:active, :focus-visible) {
+        background-color: var(--fg);
+        color: var(--bg);
+      }
+    }
+  </style>
 
   <!-- favicons -->
-    <!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
-    <link rel="apple-touch-icon-precomposed" href="/icons/favicon-152.png">
-    <!-- IE 10 Metro tile icon -->
-    <meta name="msapplication-TileColor" content="#01B580">
-    <meta name="msapplication-TileImage" content="/icons/favicon-144.png">
-    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/icons/favicon-152.png">
-    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icons/favicon-144.png">
-    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/icons/favicon-120.png">
-    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icons/favicon-114.png">
-    <!-- For first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icons/favicon-72.png">
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="/icons/favicon-57.png">
-    <!-- Favicons targeted to any additional png sizes that you add that aren't covered above -->
-    <link rel="icon" href="/icons/favicon-32.png" sizes="32x32">
-
 
 </head>
-<body id="ikalator">
-
-  <header role="banner">
-    <h1><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="503" height="72" viewBox="0 0 503 72" role="img" aria-labelledby="title  desc">
-      <title id="title">ikalator</title>
-      <desc id="desc">The logo of Rikki Bochow</desc>
-      <g id="ikalator" role="presentation" fill="#f0f8ff" stroke="#00f" stroke-width="1.7">
-        <g id="ikalator_r"><path d="M492.5 47.3c-3.8 4.6-9 8-15 9.4 4.4 3 7.3 8.2 7.3 14h17c0-9-3.5-17.3-9.3-23.4z"/><path d="M471.3 2v13.8c7 0 14 6.2 14 14 0 7.6-7 13.8-14 13.8v14c15 0 27.8-12.6 27.8-28 0-15-12.4-27.6-27.4-27.6z"/><path  d="M498.8 29.8h-14"/><path d="M455 1.8h16.7v69H455z"/></g>
-        <g id="ikalator_o"><path d="M407.7 2c-19 0-34.3 15.4-34.3 34.3 0 19 15.4 34.3 34.3 34.3 19 0 34.3-15.4 34.3-34.3 0-19-15.4-34.3-34.3-34.3zm0 51.7c-9.6 0-17.4-7.8-17.4-17.4 0-9.6 7.8-17.4 17.4-17.4 9.6 0 17.4 7.4 17.4 17s-7.5 17.4-17 17.4z"/><path d="M407.7 53.6v17"/><path d="M407.7 2.6v17"/><path d="M373.4 36.4h17"/><path d="M425 36.4h17"/></g>
-        <g id="ikalator_t"><path d="M323 17h16.7v53.5H323z"/><path d="M299.5 17H315v12.4h-15.5z"/><path d="M346.6 17h15.8v12.4h-15.8z"/><path d="M299.5 2.2h63V17h-63z"/></g>
-        <g id="ikalator_a2" transform="translate(230 1)"><path d="M34.4.8l35 69H.2L34.5 1z"/><path  d="M34.4 1.6v69"/>
-          <circle cx="34.4" cy="46.3" r="13.9" fill="#0ff"/></g>
-        <g id="ikalator_l"><path d="M185.6 2.6h17v55.6h-17z"/><path d="M185.6 58.3H222V71h-36.4z"/></g>
-        <g id="ikalator_a1" transform="translate(107 1)"><path d="M34.8.8l35.2 69H.5L34.8 1z"/><path  d="M34.8 1.6v69"/>
-          <circle cx="34.4" cy="46.3" r="13.9" fill="#0ff"/></g>
-        <g id="ikalator_k"><path d="M86.8 45C81 50.2 73.5 53.5 65 54c9.5 0 17 7.7 17 17h17c0-10.4-4.7-20-12.2-26z"/><path d="M46.8 2.3h16.8v68H46.8z"/><path d="M80.6 20c0 9.5-7.6 17-17 17v17c18.8 0 34-15 34-34h-17z"/></g>
-        <g id="ikalator_i"><path d="M9.7 15h17v43h-17z"/><path d="M1.8 2.3h32.6V15H1.8z"/><path d="M1.8 58h32.6v13H1.8z"/></g>
-      </g>
-      <image src="/ikalator.png" xlink:href="" role="presentation" />
-    </svg></h1>
-    <p>aka <b>rikki_iki</b>. aka <b>loco_bochow</b></p>
-  </header>
-
-  <main role="main">
-    <p>I'm a hybrid developer. I have an education in graphic design, a strong sense of the users experience,
-      a passion for accessibility and 10+ years experience developing standards compliant websites,
-      particularly with the Open-source platform <a href="http://drupal.org">Drupal</a>.</p>
-    <p>I also love sour lollies, toys, kung-fu films, spiders, dogs &amp; cats.</p>
+<body>
+  <main>
+    <h1 class="sr-only">Hi, I'm @rikki_iki.</h1>
+    <p>I do front-end things at <a href="https://previousnext.com.au">PreviousNext</a> 
+      and sometimes write <a href="https://www.previousnext.com.au/about/team/rikkibochow">blog posts</a>.</p>
+    <p>I'm not very social but you can find me on <a href="https://drupal.community/@rikki_iki">Mastadon</a>, 
+      <a href="http://drupal.org/u/rikki-iki">Drupal.org</a> and <a href="http://github.com/rikki-iki">Github</a>.</p>
   </main>
-
-  <a href="http://twitter.com/rikki_iki">Twitter</a>
-  <a href="http://drupal.org/u/rikki-iki">Drupal</a>
-  <a href="http://au.linkedin.com/in/rikkibochow">LinkedIn</a>
-  <a href="http://github.com/rikki-iki">Github</a>
-  <a href="http://github.com/rikki-iki/recipes">Recipes</a>
-  <a href="mailto:rikki@ikalator.com">Email</a>
-
-  <p>Special thanks to <a href="http://marinsekesan.com">Marin Sekesan</a> for my logo design <3</p></3>
-
 </body>
 </html>
