@@ -11,7 +11,7 @@
 
   <title>ikalator</title>
   <meta name="author" content="rikk_iki">
-  <meta name="description" content="Designer and Front-end Drupal developer">
+  <meta name="description" content="Senior Front-end Drupal developer">
 
   <!-- stylesheet -->
   <style>
@@ -24,41 +24,65 @@
       color: var(--fg);
       background-color: var(--bg);
       font-family: system-ui, sans-serif;
-      font-size: clamp(1.5rem, 6.5vw, 8vh);
+      font-size: clamp(2rem, 8vmin, 6rem);
       font-weight: bold;
       text-transform: lowercase;
       text-wrap: pretty;
     }
     html {
-      height: 100vh;
+      block-size: 100vh;
       place-content: center;
+
+      @supports (text-box: trim-both) {
+        background-size: 1ex 1ex;
+        background-image: linear-gradient(to bottom, #8080801f 1px, transparent 1px);
+        background-position: center;
+      }
     }
     body {
-      width: min(100%, 20ch);
-      margin: auto;
-      padding: 1em;
+      inline-size: min(100%, 24ch);
+      margin-inline: auto;
+      margin-block: auto;
+      padding-inline: 2ex;
+      padding-block: 2ex;
+      box-sizing: border-box;
+    }
+    main {
+      display: grid;
+      gap: 1ex;
+
+      & p {
+        text-indent: 2ex;
+      }
 
       & * {
         margin: unset;
         font-size: unset;
+        text-box: trim-both ex alphabetic;
+        line-height: 2ex;
       }
     }
-    p {
-      text-indent: 2ch;
+    ::selection {
+      background: var(--accent);
+      color: var(--bg);
     }
     :any-link {
       color: var(--accent);
       text-underline-offset: 0.08em;
+      text-decoration-inset: 0.025em;
       
       &:active {
         text-underline-offset: 0.12em; 
+        opacity: 0.85;
       }
 
       &:focus-visible {
-        outline: dashed 0.08em var(--fg);
+        outline: dashed 0.08em var(--accent);
+        background-color: var(--fg);
+        color: var(--bg);
       }
 
-      &:hover:not(:active, :focus-visible) {
+      &:hover:not(:active) {
         background-color: var(--fg);
         color: var(--bg);
       }
